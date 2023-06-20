@@ -35,9 +35,10 @@ namespace C__gr3_part1_HW6
 
         public void DisplayListOfStudents()
         {
+            Console.WriteLine("\tThe list of Students for this course:");
             foreach (Student st in ListOfStudents)
             {
-                Console.WriteLine($"{st.FirstName} {st.LastName} {st.Age} {st.City}");
+                Console.WriteLine($"\t\t{st.FirstName} {st.LastName} {st.Age} {st.City}");
             }
         }
     }

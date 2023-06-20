@@ -22,11 +22,21 @@
             }
         }
 
+        public void Print()
+        {
+            Console.WriteLine("First Name is: " + FirstName);
+            Console.WriteLine("Last Name is: " + LastName);
+            Console.WriteLine("Brain is: " + Brain);
+
+            DisplayListOfCourses();
+        }
+
         public void DisplayListOfCourses()
         {
+            Console.WriteLine("\tThe list of courses for this teacher:");
             foreach (Course cs in ListOfCourses)
             {
-                Console.WriteLine($"{cs.CourseName} {cs.TeacherName} {cs.CourseDuration} {cs.NumberOfStudents}");
+                Console.WriteLine($"\t\t{cs.CourseName}");
             }
         }
     }

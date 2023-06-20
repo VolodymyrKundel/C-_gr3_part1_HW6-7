@@ -29,6 +29,8 @@
             Console.WriteLine("Last Name is: " + LastName);
             Console.WriteLine("Age is: " + Age);
             Console.WriteLine("City is: " + City);
+
+            DisplayListOfCourses();
         }
 
         public void DescribeYourself()
@@ -41,9 +43,10 @@
 
         public void DisplayListOfCourses()
         {
+            Console.WriteLine("\tThe list of courses for this student:");
             foreach (Course cs in ListOfCourses)
             {
-                Console.WriteLine($"{cs.CourseName} {cs.TeacherName} {cs.CourseDuration} {cs.NumberOfStudents}");
+                Console.WriteLine($"\t\t{cs.CourseName}");
             }
         }
     }
